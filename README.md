@@ -10,3 +10,13 @@ The USGS is interested in building a new set of tools that will allow them visua
 
 The USGS provides earthquake data in a number of different formats, updated every 5 minutes. We visited the USGS GeoJSON Feed page and picked a data set to visualize. We chose 'All Earthquakes from the Past 7 Days'. The URL of this JSON to pull in the data for our visualization is https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson
 
+## Import and visualize the data:
+
+* Created a map using Leaflet that plots all of the earthquakes from the data set based on their longitude and latitude.
+
+* The data markers reflect the magnitude of the earthquake by their size and and depth of the earth quake by color. Earthquakes with higher magnitudes should appear larger and earthquakes with greater depth should appear darker in color. The depth of the earth is the third coordinate for each earthquake.
+
+* Included popups that provide additional information about the earthquake when a marker is clicked.
+
+* Created a legend that will provide context for the map data.
+
