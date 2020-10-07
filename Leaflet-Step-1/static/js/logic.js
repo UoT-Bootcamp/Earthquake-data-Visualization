@@ -126,55 +126,8 @@ function createFeatures(earthquakeData) {
   //   var legendInfo = "<h1>Median Income</h1>" +
   //     "<div class=\"labels\">" +
   //       "<div class=\"min\">" + limits[0] + "</div>" +
-  //       "<div class=\"max\">" + limits[limits.length - 1] + "</div>" +
-  //     "</div>";
+ 
 
-  //   div.innerHTML = legendInfo;
-
-  //   limits.forEach(function(limit, index) {
-  //     labels.push("<li style=\"background-color: " + colors[index] + "\"></li>");
-  //   });
-
-  //   div.innerHTML += "<ul>" + labels.join("") + "</ul>";
-  //   return div;
-  // };
-
-  // // Adding legend to the map
-  // legend.addTo(myMap);
-
-
-
-
-
-
-
-
-
-
-
-
-// function createMap(){
-//   L.control.legend({
-//     items: [
-//         {color: 'red', label: 'reserved'},
-//         {color: 'blue', label: 'not reserved'}
-//     ],
-//     collapsed: true,
-//     // insert different label for the collapsed legend button.
-//     buttonHtml: 'legend'
-// }).addTo(myMap);
-// }
-
-
-
-
-// d3.json(queryUrl, function(response){
-//   L.geoJSON(response.features, {
-//     pointToLayer: function(feature, layer){
-//       L.circleMarker(latlng, )
-//     }
-//   })
-// // })
 
 
 // d3.json(queryUrl, function(response){
