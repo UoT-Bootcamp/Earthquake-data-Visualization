@@ -106,7 +106,8 @@ function createFeatures(earthquakeData) {
         opacity: 0.65,
         fillOpacity: 0.79
         });
-    }    
+    }   
+  // }) 
   }).addTo(myMap);
 }
 
