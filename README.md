@@ -1,5 +1,7 @@
 # Visualizing Data with Leaflet
 
+![leaflet](https://github.com/UoT-Bootcamp/Leaflet-Challenge/blob/master/Images/1-Logo.png)<br/>
+
 ## Background:
 
 The United States Geological Survey, or USGS (for short) is responsible for providing scientific data about natural hazards, the health of our ecosystems and environment; and the impacts of climate and land-use change. Our task is to deploy new methods and tools to supply timely, relevant, and useful information about the Earth and its processes. 
