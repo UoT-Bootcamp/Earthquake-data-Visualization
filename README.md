@@ -10,7 +10,11 @@ The USGS is interested in building a new set of tools that will allow them visua
 
 ## Getting the data set:
 
+### Earthquake Data:
+
 The USGS provides earthquake data in a number of different formats, updated every 5 minutes. We visited the USGS GeoJSON Feed page and picked a data set to visualize. We chose 'All Earthquakes from the Past 7 Days'. The URL of this JSON to pull in the data for our visualization is https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson
+
+### Tectonic Data:
 
 For plotting the second data set on the map to illustrate the relationship between tectonic plates and seismic activity, we need to pull in a second data set and visualize it along side the original set of data. The URL for this data on tectonic plates can be found at - https://raw.githubusercontent.com/fraxen/tectonicplates/master/GeoJSON/PB2002_boundaries.json
 
