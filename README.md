@@ -29,3 +29,34 @@ For plotting the second data set on the map to illustrate the relationship betwe
 
 * Created a legend that will provide context for the map data.
 
+* Plotted a second data set on the map.
+
+* Added a number of base maps to choose from as well as separate out our two different data sets into overlays that can be turned on and off independently.
+
+* Added layer controls to the map.
+
+
+## Leaflet-Step-1:
+
+The look of ths map is below:
+
+![map](https://github.com/UoT-Bootcamp/Leaflet-Challenge/blob/master/Leaflet-Step-1/screenshot/leaflet_1.png)
+
+
+## Leaflet-Step-2:
+
+The look of this map is below:
+
+![map](https://github.com/UoT-Bootcamp/Leaflet-Challenge/blob/master/Leaflet-Step-2/screenshots/screenshot1.png)<br>
+
+![map](https://github.com/UoT-Bootcamp/Leaflet-Challenge/blob/master/Leaflet-Step-2/screenshots/screenshot2.png)<br>
+
+![map](https://github.com/UoT-Bootcamp/Leaflet-Challenge/blob/master/Leaflet-Step-2/screenshots/screenshot3.png)<br>
+
+
+
+
+
+
+
+
