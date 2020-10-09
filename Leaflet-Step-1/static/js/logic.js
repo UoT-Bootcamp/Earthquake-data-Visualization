@@ -1,7 +1,7 @@
 // Create a map object
 var myMap = L.map("map", {
   center: [42, -112.3626],
-  zoom: 5
+  zoom: 4
 });
 
 
@@ -16,7 +16,7 @@ L.tileLayer("https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
 }).addTo(myMap);
 
 
-// Set the URL
+// Set the query URL
 var queryUrl = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson";
 
 
@@ -61,6 +61,27 @@ else {
 }
 
 
+// Set function to get the legend
+function getLegend(){
+  var legend = L.control({position: 'bottomright'});
+  legend.onAdd = function () {
+    var div = L.DomUtil.create('div', 'info legend');
+    var colors = ["#00e600", "#ffff00", "#ffcc00", "#ffaf1a", "#ff8c66", "#cc3300"];
+    var categories = ["-10-10", "10-30", "30-50", "50-70", "70-90", "90+"];
+    var labels = [];
+    for (var i = 0; i < categories.length; i++) {
+      div.innerHTML += 
+      labels.push(
+        '<i class="legend" style="background:' + colors[i] + '"></i> ' + categories[i]
+      )
+    }
+    div.innerHTML = labels.join('<br>');
+    return div;
+  };
+  legend.addTo(myMap);
+}
+
+
 // Set the function createFeatures()
 function createFeatures(earthquakeData) {
   // Define a function we want to run once for each feature in the features array.
@@ -92,7 +113,6 @@ function createFeatures(earthquakeData) {
       }
     })
   }
-
   // Create a GeoJSON layer containing the features array on the earthquakeData object
   L.geoJSON(earthquakeData, {
     // Run the onEachFeature function once for each piece of data in the array
@@ -107,104 +127,6 @@ function createFeatures(earthquakeData) {
         fillOpacity: 0.79
         });
     }   
-  // }) 
   }).addTo(myMap);
+  getLegend();
 }
-
-
-
-
-
-  // // Set up the legend
-  // var legend = L.control({ position: "bottomright" });
-  // legend.onAdd = function() {
-  //   var div = L.DomUtil.create("div", "info legend");
-  //   var limits = geojson.options.limits;
-  //   var colors = geojson.options.colors;
-  //   var labels = [];
-
-  //   // Add min & max
-  //   var legendInfo = "<h1>Median Income</h1>" +
-  //     "<div class=\"labels\">" +
-  //       "<div class=\"min\">" + limits[0] + "</div>" +
- 
-
-
-
-// d3.json(queryUrl, function(response){
-//   var earthquakeData = response.features
-//   var x = []
-//   for (var i = 0; i < earthquakeData.length; i++){
-//     x.push(earthquakeData[i].geometry.coordinates[2])
-//   }
-//   console.log(Math.max.apply(null,x));
-  
-// })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// d3.json(queryUrl, function(data) {
-//   // Once we get a response, send the data.features object to the createFeatures function
-//   // markerStyle()
-//   createFeatures(data.features);
-// });
-
-// function markerStyle(feature){
-//   return {
-//     color: "green",
-//     fillColor: "green",
-//     fillOpacity: 0.75,
-//     radius: 10
-//   };
-// }
-
-// function getRadius(magnitude){
-//   return magnitude * 5;
-// }
-  
-
-
-
-// function createFeatures(earthquakeData) {
-
-//   // Define a function we want to run once for each feature in the features array
-//   // Give each feature a popup describing the place and time of the earthquake
-//   function onEachFeature(feature, layer) {
-//     layer.bindPopup("<h3>" + feature.properties.mag +
-//       "</h3><hr><p>" + new Date(feature.geometry.coordinates[2]) + "</p>");
-//   }
-
-//   // Create a GeoJSON layer containing the features array on the earthquakeData object
-//   // Run the onEachFeature function once for each piece of data in the array
-//   var earthquakes = L.geoJSON(earthquakeData, {
-//     // onEachFeature: onEachFeature
-//     onEachFeature: onEachFeature,
-//     pointToLayer : function (feature, latlng) {
-//       return L.circleMarker(latlng, {
-//         radius: getRadius(feature.properties.mag),
-//         color: "green",
-//         opacity: 0.90,
-//         fillOpacity: 0.30
-//         });
-//   }
-
-//   }).addTo(myMap);
-
-//   // Sending our earthquakes layer to the createMap function
-//   // createMap(earthquakes);
-// }
-
-// // function createMap(){
-  
-// // }
