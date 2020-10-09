@@ -38,12 +38,16 @@ For plotting the second data set on the map to illustrate the relationship betwe
 
 ## Leaflet-Step-1:
 
-The look of ths map is below:
+The GitHub pages link is - https://uot-bootcamp.github.io/Leaflet-Challenge/Leaflet-Step-1
+
+The look of this map is below:
 
 ![map](https://github.com/UoT-Bootcamp/Leaflet-Challenge/blob/master/Leaflet-Step-1/screenshot/leaflet_1.png)
 
 
 ## Leaflet-Step-2:
+
+The GitHub pages link is - https://uot-bootcamp.github.io/Leaflet-Challenge/Leaflet-Step-1\2
 
 The look of this map is below:
 
@@ -52,11 +56,4 @@ The look of this map is below:
 ![map](https://github.com/UoT-Bootcamp/Leaflet-Challenge/blob/master/Leaflet-Step-2/screenshots/screenshot2.png)<br>
 
 ![map](https://github.com/UoT-Bootcamp/Leaflet-Challenge/blob/master/Leaflet-Step-2/screenshots/screenshot3.png)<br>
-
-
-
-
-
-
-
 
