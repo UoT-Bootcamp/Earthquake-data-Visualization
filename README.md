@@ -38,7 +38,7 @@ For plotting the second data set on the map to illustrate the relationship betwe
 
 ## Leaflet-Step-1:
 
-The GitHub pages link is - https://uot-bootcamp.github.io/Leaflet-Challenge/Leaflet-Step-1
+The GitHub pages link is - https://uot-bootcamp.github.io/Leaflet-Challenge//tree/master/Leaflet-Step-1
 
 The look of this map is below:
 
