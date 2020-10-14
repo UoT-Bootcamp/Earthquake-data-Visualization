@@ -53,7 +53,7 @@ The look of this map is below:
 
 ![map](https://github.com/UoT-Bootcamp/Leaflet-Challenge/blob/master/Leaflet-Step-2/screenshots/screenshot1.png)<br>
 
-![map](https://github.com/UoT-Bootcamp/Leaflet-Challenge/blob/master/Leaflet-Step-2/screenshots/screenshot2.png)<br>
+![map](https://github.com/UoT-Bootcamp/Leaflet-Challenge/blob/master/Leaflet-Step-2/screenshots/screenshot_2.png)<br>
 
 ![map](https://github.com/UoT-Bootcamp/Leaflet-Challenge/blob/master/Leaflet-Step-2/screenshots/screenshot3.png)<br>
 
