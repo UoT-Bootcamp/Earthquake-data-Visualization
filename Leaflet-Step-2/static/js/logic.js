@@ -51,11 +51,6 @@ else {
 }
 
 
-// Set the function to get the legend
-function getLegend(){
- 
-}
-
 
 // Set the function createFeaturesEarthquake()
 function createFeaturesEarthquake(earthquakeData) {

@@ -72,7 +72,7 @@ function getLegend(){
     for (var i = 0; i < categories.length; i++) {
       div.innerHTML += 
       labels.push(
-        '<i class="legend" style="background:' + colors[i] + '"></i> ' + categories[i]
+        '<i class="legend" style="background:' + colors[i] + '></i> ' + categories[i]
       )
     }
     div.innerHTML = labels.join('<br>');
