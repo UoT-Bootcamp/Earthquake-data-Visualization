@@ -1,4 +1,4 @@
-# Visualizing Data with Leaflet
+# Visualizing Data with Leaflet - Leaflet Challenge
 
 ![leaflet](https://github.com/UoT-Bootcamp/Leaflet-Challenge/blob/master/Images/1-Logo.png)<br/>
 
